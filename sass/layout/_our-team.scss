@@ -67,11 +67,12 @@
   border-radius: 50%;
   background-color: $background-color;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-link-item:focus,
-.social-link-item:hover {
-  border-radius: 50%;
-  background-color: $accent-color;
+
+  &:focus,
+  &:hover {
+    border-radius: 50%;
+    background-color: $accent-color;
+  }
 }
 
 .team-social-icon {

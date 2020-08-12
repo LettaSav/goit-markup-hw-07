@@ -32,6 +32,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 .form-btn-close {
   position: absolute;
   top: 0;
@@ -53,19 +54,17 @@
 }
 .icon-cross {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 9px, 10px;
-  transform: translate(-17px, 18px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   fill: black;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .form-btn-close:focus + .icon-cross,
-.form-btn-close:hover + .icon-cross,
-.icon-cross:hover,
-.icon-cross:focus {
+.form-btn-close:hover + .icon-cross .icon-cross:focus,
+.icon-cross:hover {
   fill: $accent-color;
 }
 .form-sent {
